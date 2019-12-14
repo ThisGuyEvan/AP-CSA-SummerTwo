@@ -1,0 +1,20 @@
+  public static void taskTwo(int s, int t){
+    String length = "";
+    int deduct = s;
+    String newLength = "";
+    for (int w = 0; w < s; w++){
+      for (int r = 0; r < t; r++){
+        length += String.format("%d" , r);
+      }
+    }
+
+    for (int v = 0; v < t; v++){
+      System.out.println(length);
+      deduct -= 1;
+      newLength = Character.toString(length.charAt(deduct));
+      
+    }
+    System.out.println(newLength);
+
+    
+  }
